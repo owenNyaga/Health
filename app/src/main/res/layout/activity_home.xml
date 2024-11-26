@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/ic_launcher_background"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Inbox and Applications Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Inbox -->
+
+        <!-- Applications -->
+        <LinearLayout
+            android:id="@+id/inboxSection"
+            android:layout_width="448dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/inboxIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="Inbox Icon"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:id="@+id/inboxText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inbox"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myJobsSection"
+            android:layout_width="477dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myJobsIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="My Jobs Icon"
+                android:src="@drawable/jobs" />
+
+            <TextView
+                android:id="@+id/myJobsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Applications"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Menu Buttons -->
+
+    <Button
+        android:id="@+id/manageProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/button_background"
+        android:text="Manage Profile"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myJobsSection" />
+
+    <Button
+        android:id="@+id/viewJobsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/button_background"
+        android:text="View Jobs"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/manageProfileButton" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/viewShiftsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:text="View Shifts"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewJobsButton" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/logout_button_background"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewShiftsButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

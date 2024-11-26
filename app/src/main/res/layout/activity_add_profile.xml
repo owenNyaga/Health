@@ -1,0 +1,68 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/dobEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth (Optional)" />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age" />
+
+        <EditText
+            android:id="@+id/mobileEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile (Optional)" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/noprofile" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Profile Picture" />
+
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile" />
+    </LinearLayout>
+</ScrollView>
